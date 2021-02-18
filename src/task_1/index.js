@@ -9,7 +9,11 @@
 function numeralSum(number) {
     let arr = number.toString().split('');
     let num = 0;
-    arr.forEach(item => num += parseInt(item));
+    arr.forEach(item => {
+        if (isFinite(parseInt(item))) {
+            num += parseInt(item)
+        }
+    });
     return num;
 }
 
