@@ -1,0 +1,11 @@
+addReviewers: true
+
+addAssignees: true
+
+reviewers:
+  - Toouren
+
+assignees:
+  - Toouren
+
+numberOfReviewers: 1
