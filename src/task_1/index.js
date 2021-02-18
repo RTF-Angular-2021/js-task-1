@@ -7,6 +7,10 @@
  */
 
 function numeralSum(number) {
+    let arr = number.toString().split('');
+    let num = 0;
+    arr.forEach(item => num += parseInt(item));
+    return num;
 }
 
 module.exports.numeralSum = numeralSum;
