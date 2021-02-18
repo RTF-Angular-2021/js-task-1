@@ -8,13 +8,16 @@
 
 function numeralSum(number) {
     let arr = number.toString().split('');
-    let num = 0;
+    let sum = 0;
     arr.forEach(item => {
         if (isFinite(parseInt(item))) {
-            num += parseInt(item)
+            sum += parseInt(item)
         }
     });
-    return num;
+    if (arr.join('') == Number.POSITIVE_INFINITY) {
+        sum = Number.POSITIVE_INFINITY;
+    }
+    return sum;
 }
 
 module.exports.numeralSum = numeralSum;
