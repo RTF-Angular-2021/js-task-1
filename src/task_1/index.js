@@ -7,6 +7,7 @@
  */
 
 function numeralSum(number) {
+	console.log('first task');
 }
 
 module.exports.numeralSum = numeralSum;
