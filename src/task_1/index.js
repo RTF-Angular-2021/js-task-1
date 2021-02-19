@@ -7,7 +7,7 @@
  */
 
 function numeralSum(number) {
-	if (isNaN(NaN))
+	if (isNaN(number))
 		return 0;
 	if (!isFinite(number))
 		return Infinity;
@@ -17,7 +17,6 @@ function numeralSum(number) {
 	for (digit of stringNum)
 		result += parseInt(digit);
 
-	
 	return result;
 }
 
