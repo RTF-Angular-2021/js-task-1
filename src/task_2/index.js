@@ -6,6 +6,7 @@
 @return {string} Строка формата Фамилия И.О.
  */
 function fioFormat(inputFio) {
+    
 }
 
 module.exports.fioFormat = fioFormat;
