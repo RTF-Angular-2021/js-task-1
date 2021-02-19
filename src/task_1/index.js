@@ -7,7 +7,7 @@
  */
 
 function numeralSum(number) {
-	if (number == NaN)
+	if (isNaN(NaN))
 		return 0;
 	if (!isFinite(number))
 		return Infinity;
