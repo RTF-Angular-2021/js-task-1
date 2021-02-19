@@ -5,7 +5,10 @@
 @param {string} inputFio - Строка с именем, фамилией и отчеством
 @return {string} Строка формата Фамилия И.О.
  */
+
 function fioFormat(inputFio) {
+    let data = inputFio.split(' ');
+    return `${data[1]} ${data[0][0]}.${data[2][0]}.`
 }
 
 module.exports.fioFormat = fioFormat;

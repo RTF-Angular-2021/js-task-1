@@ -7,7 +7,7 @@ value - значение, которое содержится в поле key и
 @param {object} object - Исходный объект
 @return {Array} Массив вида [[key, value], [key, value], ...]
  */
-function makePairs(object) {
-}
+
+const makePairs = object => Object.keys(object).map(key => [key, object[key]]);
 
 module.exports.makePairs = makePairs;

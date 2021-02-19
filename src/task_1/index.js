@@ -6,7 +6,13 @@
 @return {number} Сумма цифр числа
  */
 
-function numeralSum(number) {
-}
+const numeralSum = number => isNaN(number) 
+    ? 0 
+    : !isFinite(number) 
+        ? Infinity 
+        : Number(number.toString()
+                    .split('')
+                    .filter(x => x.match('[0-9]'))
+                    .reduce((a, b) => +a + +b));
 
 module.exports.numeralSum = numeralSum;
