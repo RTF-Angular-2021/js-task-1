@@ -7,6 +7,18 @@
  */
 
 function numeralSum(number) {
+	if (number == NaN)
+		return 0;
+	if (!isFinite(number))
+		return Infinity;
+
+	let result = 0;
+	let stringNum = Math.abs(number).toString().replace('.', '');
+	for (digit of stringNum)
+		result += parseInt(digit);
+
+	
+	return result;
 }
 
 module.exports.numeralSum = numeralSum;
