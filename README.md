@@ -26,27 +26,31 @@
 
 Для успешной сдачи требуется
 
-1. Склонировать локально репозиторий
+1. Сделать копию репозитория к себе в профиль (сделать форк)
+   
+<img src="https://i.imgur.com/43UgRSr.png" alt="image-20210218140108451" style="zoom:33%;" />
+   
+2. Склонировать скопированный к себе в профиль репозиторий локально
    <img src="https://i.imgur.com/rPU7vno.png" alt="image-20210218140108451" style="zoom:33%;" />
 
-2. Создать новую ветку формата `фамилия_имя`
+3. Создать новую ветку формата `фамилия_имя`
    <img src="https://i.imgur.com/Tyg716Y.png" alt="image-20210218140341543" style="zoom:25%;" />
 
-3. Установить пакеты с помощью `npm i`
+4. Установить пакеты с помощью `npm i`
 
-4. Выполнить задания (задачи находятся в исполняемых файлах в папках src/task_number)
+5. Выполнить задания (задачи находятся в исполняемых файлах в папках src/task_number)
    <img src="https://i.imgur.com/FlMd2gV.png" alt="image-20210218140707941" style="zoom:33%;" />
 
-5. Создать коммит и отправить его в GitHub
+6. Создать коммит и отправить его в GitHub
    <img src="https://i.imgur.com/rJ7q1sW.png" alt="image-20210218141224587" style="zoom:33%;" />
 
-6. Опубликовать свою ветку
+7. Опубликовать свою ветку
    <img src="https://i.imgur.com/yrXHjOv.png" alt="image-20210218141645337" style="zoom:33%;" />
 
-7. Зайти на [GitHub](https://github.com/RTF-Angular-2021) и создать новый Pull request
+8. Зайти на [GitHub](https://github.com/RTF-Angular-2021) и создать новый Pull request
    <img src="https://i.imgur.com/YsG7mr6.png" alt="image-20210218141406871" style="zoom:33%;" />
 
-8. Выбрать в списке base веток **master**, в списке compare веток **свою** и открыть PR
+9. Выбрать в списке base веток **master**, в списке compare веток **свою** и открыть PR
 
    <img src="https://i.imgur.com/JVV61bd.png" alt="image-20210218141839596" style="zoom:33%;" />
 
@@ -81,4 +85,3 @@
 Все важные объявления будут в [канале](https://t.me/joinchat/Rlj3tdlpCd0eSyUg)
 
 Также для связи и проверки некоторых заданий мы будем использовать почту 2021.rtf.angular@gmail.com
-
