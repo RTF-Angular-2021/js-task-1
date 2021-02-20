@@ -1,12 +1,18 @@
-/** Задача 1 - Сумма цифр числа
-Требуется написать функцию numeralSum, которая
-принимает число,
-требуется вернуть сумму цифр этого числа
-@param {number} number - Исходное число
-@return {number} Сумма цифр числа
- */
-
 function numeralSum(number) {
+    
+    if (isNaN(number)) {
+        return 0
+    }
+  let sum = 0
+  number = Math.abs(number)
+    let numberString = number.toString();
+    numberString = numberString.replace('.', '')
+        for (let symbol of numberString) {   
+            sum += parseInt (symbol, 10)
+    }
+    if (number === Infinity) {
+        return Infinity
+    }
+    return (sum)
 }
-
 module.exports.numeralSum = numeralSum;
