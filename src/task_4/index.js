@@ -6,7 +6,7 @@
 @return {number} Среднее арифмитическое чисел в строке
  */
 function average(numbersString) {
-    let arr = numbersString.split(',');
+    const arr = numbersString.split(',');
     let sum = 0, count = 0;
     arr.forEach(item => {
         if (isFinite(parseInt(item))) {

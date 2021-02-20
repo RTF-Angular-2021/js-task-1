@@ -7,7 +7,7 @@
  */
 
 function numeralSum(number) {
-    let arr = number.toString().split('');
+    const arr = number.toString().split('');
     let sum = 0;
     arr.forEach(item => {
         if (isFinite(parseInt(item))) {

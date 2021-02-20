@@ -7,7 +7,7 @@
 @return {number} Количество лет
  */
 function countAge(birthYear) {
-    let now = new Date().getFullYear();
+    const now = new Date().getFullYear();
     if (isFinite(now) && parseInt(birthYear) === parseFloat(birthYear) && birthYear <= now && birthYear > 0) {
         return now - birthYear;
     } else throw 'error';
