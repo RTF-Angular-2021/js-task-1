@@ -7,6 +7,24 @@
  */
 
 function numeralSum(number) {
+    if (isNaN(number)) {
+        return 0;
+    }
+
+    if (!isFinite(number)) {
+        return number;
+    } else {
+        let numberString = number.toString();
+        let sum = 0;
+
+        for (let symbol of numberString) {
+            if (!isNaN(+symbol)) {
+                sum += +symbol;
+            }
+        }
+
+        return sum;
+    }
 }
 
 module.exports.numeralSum = numeralSum;
