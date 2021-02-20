@@ -1,13 +1,9 @@
-addReviewers: true
+addReviewers: false
 
 addAssignees: true
-
-reviewers:
-  - Toouren
-  - MishaAbrosimov
 
 assignees:
   - Toouren
   - MishaAbrosimov
 
-numberOfReviewers: 1
+numberOfReviewers: 0
