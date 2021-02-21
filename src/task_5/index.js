@@ -15,6 +15,4 @@ function makePairs(object, dict = []) {
     return dict;
 }
 
-console.log(makePairs({a:2, b:434}))
-
 module.exports.makePairs = makePairs;
