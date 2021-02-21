@@ -7,7 +7,7 @@
 @return {number} Количество лет
  */
 function countAge(birthYear) {
-    if(0 > birthYear || birthYear > 2021 || birthYear%1 !== 0) return ;
+    if(0 > birthYear || birthYear > 2021 || birthYear%1 !== 0) throw Error;
     return 2021 - +birthYear;
 }
 
