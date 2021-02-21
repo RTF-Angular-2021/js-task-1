@@ -8,7 +8,7 @@
 
 function numeralSum(number) {
 
-    if (isNaN(number)) return number
+    if (isNaN(number)) return 0
     if (!isFinite(number)) return number
     if (number < 0) number *= -1
   
