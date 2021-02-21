@@ -7,6 +7,12 @@
  */
 
 function numeralSum(number) {
+    let res = 0;
+    if (Math.abs(number) === Infinity) return Infinity;
+    for (let num of String(number)){
+      if (!isNaN(+num)) res += +num;
+    }
+    return res;
 }
 
 module.exports.numeralSum = numeralSum;
