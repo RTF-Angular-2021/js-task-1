@@ -1,3 +1,4 @@
+"use strict";
 /** Задача 5 - Развёртка объекта
 Требуется написать функцию makePairs, которая
 принимает любой объект,
@@ -7,7 +8,13 @@ value - значение, которое содержится в поле key и
 @param {object} object - Исходный объект
 @return {Array} Массив вида [[key, value], [key, value], ...]
  */
-function makePairs(object) {
+function makePairs(object, dict = []) {
+    for (const [key, value] of Object.entries(object)) {
+        dict.push([`${key}`, value]);
+    }
+    return dict;
 }
+
+console.log(makePairs({a:2, b:434}))
 
 module.exports.makePairs = makePairs;

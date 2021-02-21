@@ -1,3 +1,4 @@
+"use strict";
 /** Задача 2 - Форматтер для ФИО
 Требуется написать функцию fioFormat, которая
 принимает строку, в которой через пробел написаны три слова: имя, фамилия и отчество,
@@ -6,7 +7,9 @@
 @return {string} Строка формата Фамилия И.О.
  */
 function fioFormat(inputFio) {
-    
+    let splitedIFO = inputFio.split(' ');
+    return `${splitedIFO[1]} ${splitedIFO[0].charAt(0)}.${splitedIFO[2].charAt(0)}.`;
 }
+
 
 module.exports.fioFormat = fioFormat;
