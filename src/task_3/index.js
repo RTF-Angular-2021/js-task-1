@@ -7,6 +7,8 @@
 @return {number} Количество лет
  */
 function countAge(birthYear) {
+    if(0 > birthYear || birthYear > 2021 || birthYear%1 !== 0) return " ";
+    return 2021 - +birthYear;
 }
 
 module.exports.countAge = countAge;
