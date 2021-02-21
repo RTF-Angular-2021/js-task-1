@@ -8,6 +8,11 @@ value - значение, которое содержится в поле key и
 @return {Array} Массив вида [[key, value], [key, value], ...]
  */
 function makePairs(object) {
+    let pair_arr = [];
+    for (let key in object){
+        pair_arr.push([key, object[key]]);
+    }
+    return pair_arr;
 }
 
 module.exports.makePairs = makePairs;
