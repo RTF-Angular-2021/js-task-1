@@ -1,6 +1,3 @@
-function makePairs(object) 
-{
-    return Object.entries(object);
-}
+makePairs = (object) => Object.entries(object);
 
 module.exports.makePairs = makePairs;

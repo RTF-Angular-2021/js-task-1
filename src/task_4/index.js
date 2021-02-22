@@ -1,8 +1,7 @@
-function average(numbersString) 
-{
-    var sum = 0;
-    var nums = numbersString.split(',');
-    for (var num of nums)
+function average(numbersString) {
+    let sum = 0;
+    let nums = numbersString.split(',');
+    for (let num of nums)
         sum += Number(num);
     return sum == 0 ? 0 : sum / nums.length;
 }

@@ -1,14 +1,9 @@
-function countAge(birthYear) 
-{
-    var currentYear = new Date().getFullYear();
-    var result = currentYear - birthYear;
+function countAge(birthYear) {
+    let isInteger = (year) => (year ^ 0) === year;
+    let currentYear = new Date().getFullYear();
+    let result = currentYear - birthYear;
     if (result >= 0 && isInteger(result) && result <= currentYear) return result;
     throw new Error();
-}
-
-function isInteger(year) 
-{
-    return (year ^ 0) === year;
 }
 
 module.exports.countAge = countAge;
