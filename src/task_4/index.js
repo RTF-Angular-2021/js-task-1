@@ -1,11 +1,10 @@
-/** Задача 4 - Среднее арифмитическое чисел
-Требуется написать функцию average, которая
-принимает строку, в которой через запятую написаны числа,
-требуется вернуть среднее арифмитическое перечисленных чисел
-@param {string} numbersString - Строка с числами
-@return {number} Среднее арифмитическое чисел в строке
- */
-function average(numbersString) {
+function average(numbersString) 
+{
+    var sum = 0;
+    var nums = numbersString.split(',');
+    for (var num of nums)
+        sum += Number(num);
+    return sum == 0 ? 0 : sum / nums.length;
 }
 
 module.exports.average = average;

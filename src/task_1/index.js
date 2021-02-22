@@ -3,7 +3,8 @@ function numeralSum(number)
     if (number == Infinity) return Infinity;
     number = convertNumber(number);
     var sum = 0;
-    while (number != 0) {
+    while (number != 0) 
+    {
         sum += number % 10;
         number = div(number);
     }

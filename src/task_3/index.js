@@ -1,12 +1,14 @@
-/** Задача 3 - Узнать возраст
-Требуется написать функцию countAge, которая
-принимает число - год рождения,
-требуется вернуть число - количество лет с года рождения на данный момент.
-Если введенный год рождения некорректный, то требуется возбуждать ошибку
-@param {number} birthYear - Год рождения
-@return {number} Количество лет
- */
-function countAge(birthYear) {
+function countAge(birthYear) 
+{
+    var currentYear = new Date().getFullYear();
+    var result = currentYear - birthYear;
+    if (result >= 0 && isInteger(result) && result <= currentYear) return result;
+    throw new Error();
+}
+
+function isInteger(year) 
+{
+    return (year ^ 0) === year;
 }
 
 module.exports.countAge = countAge;
