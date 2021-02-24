@@ -9,12 +9,9 @@
 function numeralSum(number) {
     let result = 0;
     let stringNumber = number.toString();
-    if (number == Infinity) {
-        return Infinity
-    }
-    
-    if (isNaN(number) || number == 0){
-        return 0;
+    if (isFinite(number)) {
+        if (isNaN(number)) return 0;
+        return Infinity;
     }
 
     for (let i = 0; i < number.toString(); i++)
