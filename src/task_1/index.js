@@ -19,7 +19,7 @@ function numeralSum(number) {
         if (stringNumber[i] == "." || stringNumber[i] == "-"){
             continue;
         }
-        result += int(stringNumber[i]);
+        result += Number(stringNumber[i]);
     }
     return result;
 }
