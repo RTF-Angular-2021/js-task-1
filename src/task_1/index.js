@@ -14,7 +14,7 @@ function numeralSum(number) {
         return Infinity;
     }
 
-    for (let i = 0; i < number.toString(); i++)
+    for (let i = 0; i < stringNumber.length; i++)
     {
         if (stringNumber[i] == "." || stringNumber[i] == "-") continue;
         result += stringNumber[i];
