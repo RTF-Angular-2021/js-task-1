@@ -9,7 +9,7 @@
 function numeralSum(number) {
     let result = 0;
     let stringNumber = number.toString();
-    if (isFinite(number)) {
+    if (!isFinite(number)) {
         if (isNaN(number)) return 0;
         return Infinity;
     }
