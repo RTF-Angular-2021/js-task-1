@@ -12,6 +12,10 @@ function numeralSum(number) {
     if (number == Infinity) {
         return Infinity
     }
+    
+    if (isNaN(number) || number == 0){
+        return 0;
+    }
 
     for (let i = 0; i < number.toString(); i++)
     {
