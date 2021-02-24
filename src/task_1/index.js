@@ -7,6 +7,21 @@
  */
 
 function numeralSum(number) {
+    let result = 0;
+    let stringNumber = number.toString();
+    if (number == Infinity){
+        return Infinity;
+    }
+    if(isNaN(number) || number == 0){
+        return 0;
+    }
+    for (let i = 0 ; i < stringNumber.length; i++){
+        if (stringNumber[i] == "." || stringNumber[i] == "-"){
+            continue;
+        }
+        result += int(stringNumber[i]);
+    }
+    return result;
 }
 
 module.exports.numeralSum = numeralSum;
