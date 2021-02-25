@@ -8,6 +8,7 @@
 
 function numeralSum(number) 
 {
+
     if (number == NaN) return 0;
     if (number == Infinity) return Infinity;
     if (number < 0) number *= -1;
@@ -17,7 +18,9 @@ function numeralSum(number)
     let i = 0;
     for (i; i < NumSt.length; i++)
     {
+
         let counting = parseInt(NumSt[i]);
+        if (counting != NaN)
         result += parseInt(counting);
     }
     return result;
