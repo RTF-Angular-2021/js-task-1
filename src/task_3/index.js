@@ -6,7 +6,12 @@
 @param {number} birthYear - Год рождения
 @return {number} Количество лет
  */
-function countAge(birthYear) {
+function countAge(birthYear) 
+{
+    let year = new Date().getFullYear();
+    if (!Number.isInteger(birthYear)) throw new Error();
+    if (birthYear > year || birthYear < 0) throw new Error();
+    return (year - birthYear);
 }
 
 module.exports.countAge = countAge;

@@ -5,7 +5,15 @@
 @param {string} numbersString - Строка с числами
 @return {number} Среднее арифмитическое чисел в строке
  */
-function average(numbersString) {
+function average(numbersString) 
+{
+    let sum = 0;
+    let number = numbersString.split(',');
+    let i = 0;
+    for (i; i < number.length; i++)
+    sum += Number(number[i]);
+    result = sum/number.length;
+    return result;
 }
 
 module.exports.average = average;
