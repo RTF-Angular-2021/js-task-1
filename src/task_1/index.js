@@ -11,7 +11,7 @@ function numeralSum(number)
     
     if (number == Infinity) 
     return Infinity;
-    else if (number == NaN) 
+    if (isNaN(number)) 
     return 0;
     if (number < 0) number *= -1;
 
