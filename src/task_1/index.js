@@ -8,9 +8,11 @@
 
 function numeralSum(number) 
 {
-
-    if (number == NaN) return 0;
-    if (number == Infinity) return Infinity;
+    
+    if (number == Infinity) 
+    return Infinity;
+    else if (number == NaN) 
+    return 0;
     if (number < 0) number *= -1;
 
     let result = 0;
