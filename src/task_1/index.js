@@ -22,7 +22,7 @@ function numeralSum(number)
     {
 
         let counting = parseInt(NumSt[i]);
-        if (counting != NaN)
+        if (!isNaN(counting))
         result += parseInt(counting);
     }
     return result;
