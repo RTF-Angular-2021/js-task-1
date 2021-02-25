@@ -7,6 +7,23 @@
  */
 
 function numeralSum(number) {
+
+  if ((number == 0) || (isNaN(number))) {
+    return 0;
+  }
+  else if (!isFinite(number)) {
+    return Infinity;  
+  }
+  else {
+    let sum = 0;
+    number = Math.abs(number).toString().replace(".","");
+    console.log(number)
+    while (number > 0) {
+        sum += number % 10;
+        number = Math.floor(number/10)
+    }
+    return sum;
+  }
 }
 
 module.exports.numeralSum = numeralSum;

@@ -6,6 +6,13 @@
 @return {string} Строка формата Фамилия И.О.
  */
 function fioFormat(inputFio) {
+
+    let firstname = inputFio[0];   
+    let secondname = inputFio.slice(inputFio.indexOf(" ") + 1,inputFio.lastIndexOf(" "));
+    let patronymic = inputFio.slice(inputFio.lastIndexOf(" ") + 1,inputFio.lastIndexOf(" ") + 2);
+    
+    return (secondname + " " + firstname + "." + patronymic + ".");
+
 }
 
 module.exports.fioFormat = fioFormat;

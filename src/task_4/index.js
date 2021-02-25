@@ -6,6 +6,15 @@
 @return {number} Среднее арифмитическое чисел в строке
  */
 function average(numbersString) {
+    let count = 0;
+    let sum = 0;
+    arr = numbersString.split(',');
+    arr.forEach(obj => {
+        sum += parseInt(obj);
+        count += 1;
+    });
+    
+    return sum / count;
 }
 
 module.exports.average = average;
