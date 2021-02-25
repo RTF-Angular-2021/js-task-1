@@ -7,6 +7,18 @@
  */
 
 function numeralSum(number) {
+    let sum = 0;
+    let numberStr = number.toString().replace("-", "").replace(".", "");
+    number = Number(numberStr);
+    if (number == Infinity){
+        return number;
+    }
+    while (number > 0) {
+        sum += number % 10;
+        number = Math.floor(number / 10);
+    }
+
+    return sum;
 }
 
 module.exports.numeralSum = numeralSum;

@@ -7,6 +7,16 @@
 @return {number} Количество лет
  */
 function countAge(birthYear) {
+    let currentYear = new Date().getFullYear();
+    if (
+        !Number.isInteger(birthYear)
+        || birthYear < 0
+        || birthYear > currentYear
+    )   {
+        throw new Error();
+    }
+
+    return currentYear - birthYear;
 }
 
 module.exports.countAge = countAge;
