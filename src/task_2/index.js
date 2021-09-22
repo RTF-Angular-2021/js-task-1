@@ -6,6 +6,8 @@
 @return {string} Строка формата Фамилия И.О.
  */
 function fioFormat(inputFio) {
+  let ifo = inputFio.split(' ');
+  return ifo[1] + ' ' + ifo[0][0] + '.' + ifo[2][0] + '.';
 }
 
 module.exports.fioFormat = fioFormat;

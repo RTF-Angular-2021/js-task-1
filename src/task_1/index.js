@@ -7,6 +7,25 @@
  */
 
 function numeralSum(number) {
+
+  if (isNaN(number)){
+    return 0;
+  }
+
+  if (!isFinite(number)) {
+    return Infinity;
+  }
+
+  let res = 0;
+  let tmp = number + '';
+
+  for(let i=0; i < tmp.length; i++){
+    if(!isNaN(tmp.charAt(i))){
+      res += parseInt(tmp.charAt(i));
+    }
+  }
+
+  return Math.abs(res);
 }
 
 module.exports.numeralSum = numeralSum;

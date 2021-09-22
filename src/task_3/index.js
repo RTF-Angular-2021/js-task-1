@@ -7,6 +7,20 @@
 @return {number} Количество лет
  */
 function countAge(birthYear) {
+  if(isNaN(birthYear)){
+    throw new Error('birthYear is not a number');
+  }
+  if(birthYear < 0){
+    throw new Error('birthYear can not be less then zero');
+  }
+  if(birthYear % 1 != 0){
+    throw new Error('birthYear can not be float');
+  }
+  let res = new Date().getFullYear() - birthYear;
+  if(res < 0){
+    throw new Error('birthYear is greater then current year');
+  }
+  return res;
 }
 
 module.exports.countAge = countAge;
