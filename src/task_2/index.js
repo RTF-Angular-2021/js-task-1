@@ -6,10 +6,10 @@
 @return {string} Строка формата Фамилия И.О.
  */
 function fioFormat(inputFio) {
-    return inputFio
-        .split(" ")
-        .map((word, index) => index == 0 ? word : word.slice(0, 1) + '.')
-        .join("")
+    let arr = inputFio.split(" ");
+    alert(typeof (arr));
+    let change = arr[1] + arr[0].charAt(0) + "." + arr[2].charAt(0) + ".";
+    return change;
 }
 
 module.exports.fioFormat = fioFormat;
