@@ -7,7 +7,6 @@
  */
 function fioFormat(inputFio) {
     let arr = inputFio.split(" ");
-    alert(typeof (arr));
     let change = arr[1] + arr[0].charAt(0) + "." + arr[2].charAt(0) + ".";
     return change;
 }
