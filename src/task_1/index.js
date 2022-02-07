@@ -8,7 +8,6 @@
 
 function numeralSum(number) {
     let sum = 0;
-    parseInt(number);
     while (number > 0) {
         sum += number % 10
         number = Math.floor(number / 10)
