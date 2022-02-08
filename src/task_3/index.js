@@ -8,8 +8,8 @@
  */
 function countAge(birthYear) {
     let now = new Date()
-    if (birthYear == '' || birthYear < 0 || birthYear > now) {
-        console.log("Некорректный год")
+    if (birthYear < 0 || birthYear > now.getFullYear()) {
+        throw new Error("Некорректный год");
     }
 
     return (now.getFullYear() - birthYear)
