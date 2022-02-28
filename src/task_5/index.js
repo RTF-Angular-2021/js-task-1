@@ -9,6 +9,7 @@ value - значение, которое содержится в поле key и
  */
 function makePairs(object) {
     let map = new Map(Object.entries(object));
+    return map;
 }
 
 module.exports.makePairs = makePairs;
